@@ -54,6 +54,10 @@ class Main
             TweenManager.remove, tweenScale, 1.75, 1.75);
         TweenManager.add(tweenScale);
         
+        TweenManager.delayCall(3, (message:string)=> {
+            console.log(message);
+        }, 'Delay Call!');
+        
         document.addEventListener('visibilitychange', this.onVisibility.bind(this));
         window.addEventListener('resize', this.onResize.bind(this));
         setTimeout(this.onResize.bind(this), 0);
