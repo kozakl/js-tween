@@ -40,7 +40,7 @@ export default class TweenRotate extends TweenCore
         }
         this.tweenCoreUpdate(delta);
         
-        const ease = this.ease(this.time, 0, 1, this.duration);
+        const ease:number = this.ease(this.time, 0, 1, this.duration);
         this.target.rotation = this.rotate.begin - (this.rotate.begin - this.rotate.end) * ease;
         
         if (this.percent >= 1)

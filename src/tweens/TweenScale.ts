@@ -43,7 +43,7 @@ export default class TweenScale extends TweenCore
         }
         this.tweenCoreUpdate(delta);
         
-        const ease = this.ease(this.time, 0, 1, this.duration);
+        const ease:number = this.ease(this.time, 0, 1, this.duration);
         this.target.scale.x = this.scaleX.begin - (this.scaleX.begin - this.scaleX.end) * ease;
         this.target.scale.y = this.scaleY.begin - (this.scaleY.begin - this.scaleY.end) * ease;
         

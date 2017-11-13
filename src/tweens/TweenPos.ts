@@ -42,7 +42,7 @@ export default class TweenPos extends TweenCore
         }
         this.tweenCoreUpdate(delta);
         
-        const ease = this.ease(this.time, 0, 1, this.duration);
+        const ease:number = this.ease(this.time, 0, 1, this.duration);
         this.target.position.x = this.x.begin - (this.x.begin - this.x.end) * ease;
         this.target.position.y = this.y.begin - (this.y.begin - this.y.end) * ease;
         
