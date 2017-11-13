@@ -49,10 +49,13 @@ class Main
             TweenManager.remove, tweenPos, window.innerWidth - 100, 100);
         TweenManager.add(tweenPos);
         
-        const tweenScale = new TweenScale(shape);
-        tweenScale.to(3.5, null, Easing.sineIn,
-            TweenManager.remove, tweenScale, 1.75, 1.75);
-        TweenManager.add(tweenScale);
+        TweenManager.delayCall(1, ()=> {
+            const tweenScale = new TweenScale(shape);
+            tweenScale.to(3.5, null, Easing.sineIn,
+                TweenManager.remove, tweenScale, 1.75, 1.75);
+            TweenManager.add(tweenScale);
+        });
+        
         
         TweenManager.delayCall(3, (message:string)=> {
             console.log(message);
