@@ -67,11 +67,11 @@ export default class TweenManager
             }
         }
         
-        if (c != i)
+        if (c != n)
         {
-            n = TweenManager.tweens.length;
-            while (i < n)
-                TweenManager.tweens[c++] = TweenManager.tweens[i++];
+            const m = TweenManager.tweens.length;
+            while (n < m)
+                TweenManager.tweens[c++] = TweenManager.tweens[n++];
             
             TweenManager.tweens.length = c;
         }
