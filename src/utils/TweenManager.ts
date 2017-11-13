@@ -28,7 +28,7 @@ export default class TweenManager
     }
     
     public static delayCall(duration:number, complete:Function,
-                                             completeArg:any) {
+                                             completeArg?:any) {
         const delay = TweenManager.delayPool.pop() || new Delay();
         delay.to(duration, (delay:Delay)=> {
             TweenManager.remove(delay);
