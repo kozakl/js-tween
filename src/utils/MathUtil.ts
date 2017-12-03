@@ -3,10 +3,10 @@
  */
 export default class MathUtil
 {
-    public static PI_M2 = Math.PI * 2;
-    public static PI_D2 = Math.PI / 2;
-    public static RADIANS = Math.PI / 180;
-    public static DEGREES = 180 / Math.PI;
+    public static readonly PI_M2 = Math.PI * 2;
+    public static readonly PI_D2 = Math.PI / 2;
+    public static readonly RADIANS = Math.PI / 180;
+    public static readonly DEGREES = 180 / Math.PI;
     
     public static rndRange(min:number, max:number)
     {
@@ -37,5 +37,10 @@ export default class MathUtil
     public static abs(x:number)
     {
         return (x + (x >> 31)) ^ (x >> 31);
+    }
+    
+    public static sign(x:number)
+    {
+        return Math.abs(x) / x;
     }
 }
