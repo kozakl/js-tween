@@ -1,7 +1,5 @@
 import MathUtil from './MathUtil';
-/**
- * @author kozakluke@gmail.com
- */
+
 export default class Easing
 {
     public static linear(t:number, b:number,

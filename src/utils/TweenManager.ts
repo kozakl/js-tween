@@ -1,7 +1,5 @@
 import TweenCore from './TweenCore';
-/**
- * @author kozakluke@gmail.com
- */
+
 export default class TweenManager
 {
     private static tweens:TweenCore[] = [];

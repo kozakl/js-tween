@@ -1,8 +1,6 @@
 import DNumber from '../utils/DNumber';
 import TweenCore from '../utils/TweenCore';
-/**
- * @author kozakluke@gmail.com
- */
+
 export default class TweenPos extends TweenCore
 {
     private x:DNumber = new DNumber();

@@ -1,6 +1,3 @@
-/**
- * @author kozakluke@gmail.com
- */
 export default class MathUtil
 {
     public static readonly PI_M2 = Math.PI * 2;
