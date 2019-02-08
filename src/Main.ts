@@ -4,9 +4,7 @@ import TweenScale from './tweens/TweenScale';
 import Easing from './utils/Easing';
 import TweenManager from './utils/TweenManager';
 import {Application, Graphics} from 'pixi.js';
-/**
- * @author kozakluke@gmail.com
- */
+
 class Main
 {
     private static animationId:number;

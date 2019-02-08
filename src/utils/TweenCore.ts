@@ -1,6 +1,3 @@
-/**
- * @author kozakluke@gmail.com
- */
 export default class TweenCore
 {
     public motionSpeed:number = 1;
