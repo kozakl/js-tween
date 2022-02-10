@@ -1,6 +1,12 @@
-/.idea
-/node_modules
+# Dependencies
+node_modules/
+
+# Testing
+coverage/
+
+# Public
 /public/bundle.*
-/coverage
-/Mats
-TODO.txt
+
+# Others
+.idea/
+.DS_Store
